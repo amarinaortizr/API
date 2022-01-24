@@ -16,6 +16,13 @@ function index(req, res, next){
           .catch(err => res.send(err));
 }
 
+function endpoint(req, res, next){
+  const latitude = req.query.latitude;
+  const longitude = req.query.longitude;
+  const radius = req.query.radius;
+  res.send('count, avg, std. (Incomplete)'); //can't complete this section
+}
+
 function create(req, res, next){
   const id = req.body.id;
   const rating = req.body.rating;
@@ -99,5 +106,5 @@ function destroy(req, res, next){
 }
 
 module.exports={
-  list, index, create, replace, edit, destroy
+  list, index, endpoint, create, replace, edit, destroy
 }

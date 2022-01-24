@@ -5,6 +5,8 @@ const controller = require('../controllers/restaurants');
 
 router.get('/', controller.list);
 
+router.get('/statistics', controller.endpoint);
+
 router.get('/:id', controller.index);
 
 router.post('/', controller.create);
