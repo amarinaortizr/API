@@ -11,8 +11,10 @@ npm install
 
 ## Usage
 
-docker start <mysqlcontainername>
+
 ```
+docker start <mysqlcontainername>
+
 npm start
 ```
 
